@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly as plt
+#import plotly as plt
 import chart_studio.plotly as pcs
 import plotly.graph_objects as go
 import plotly.offline as py
@@ -23,7 +23,7 @@ if st.checkbox('Show Dataset for Top Tiktok Tracks'):
 topsongs = df2.sort_values('Popularity')
 top20songs = topsongs.head(20)
 topsong= topsongs.head(1)
-st.dataframe(topsong)
+
 #data = [go.Bar(x=top20songs.TrackName,
            # y=top20songs.Danceability)]
 
